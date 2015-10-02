@@ -32,6 +32,13 @@
   </template>
   <template name="TAG" value="private static final String TAG = $CLASS_NAME$." toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rgC" value="$resources$.getResources().getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
+    <variable name="resources" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="colorId" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
 </templateSet>
