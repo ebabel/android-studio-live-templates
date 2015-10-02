@@ -30,10 +30,11 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="TAG" value="private static final String TAG = $CLASS_NAME$." toReformat="false" toShortenFQNames="true">
+<template name="TAG" value="private static final String TAG = $CLASS_NAME$." toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="rgC" value="$resources$.getResources().getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
